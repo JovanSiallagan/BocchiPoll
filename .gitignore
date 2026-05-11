@@ -1,0 +1,14 @@
+# Eclipse spesifik
+.classpath
+.project
+.settings/
+bin/
+
+# Database lokal
+*.db
+
+# Output kompilasi Java
+*.class
+
+# File log atau temporary
+*.log
