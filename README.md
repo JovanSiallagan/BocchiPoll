@@ -3,10 +3,17 @@
 Aplikasi desktop interaktif untuk melakukan polling karakter favorit dari anime *Bocchi the Rock!*. Dibangun menggunakan **Java Swing** dengan database **SQLite** agar data hasil voting tersimpan permanen secara lokal.
 
 ## ✨ Fitur Utama
-* **Live Results:** Grafik batang hasil voting diperbarui secara *real-time* di layar yang sama setiap kali ada suara masuk.
-* **Klik Cerdas:** Pilih waifu cukup dengan mengklik fotonya langsung, tidak perlu mengepaskan kursor ke *radio button*.
-* **Dark Mode & Responsif:** Tampilan UI gelap yang modern, lengkap dengan gambar yang otomatis menyesuaikan ukuran jendela tanpa terpotong (gepeng).
-* **Aman & Permanen:** Data otomatis disimpan, dan fitur *Reset Data* dilindungi oleh password admin agar tidak tidak sengaja terhapus.
+* **Live Results:** Grafik batang (*bar chart*) hasil voting akan langsung diperbarui (*real-time*) setiap kali suara masuk.
+* **Modern Dark Mode UI:** Tampilan antarmuka gelap yang nyaman di mata dengan komponen yang diubahsuai (*custom components*).
+* **Responsive Image Scaling:** Gambar karakter akan menyesuaikan ukuran kotak secara otomatis tanpa terpotong atau gepeng (mirip dengan `object-fit: cover` di CSS web).
+* **Click-to-Vote:** Pengguna bisa langsung mengklik gambar atau area panel karakter untuk memilih, tidak harus mengklik tepat di *radio button*.
+* **Persistent Database:** Menggunakan SQLite terintegrasi (`sqlite-jdbc`). Data voting tidak akan hilang meskipun aplikasi ditutup.
+* **Secure Reset:** Tombol untuk mereset seluruh data suara ke angka 0, dilindungi dengan validasi *password* ganda.
+
+## 🛠️ Teknologi yang Digunakan
+* **Bahasa:** Java (JDK 8 atau lebih baru)
+* **GUI:** Java Swing & AWT
+* **Database:** SQLite (File-based database)
 
 ## 🚀 Cara Penggunaan
 
